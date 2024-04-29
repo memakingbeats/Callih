@@ -1,0 +1,150 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.whisper-regular {
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+}
+
+.icon-link {
+    display: inline-block;
+    width: 50px; /* Defina o tamanho desejado */
+    height: 50px; /* Defina o tamanho desejado */
+    line-height: 30px; /* Centralize verticalmente o ícone */
+}
+
+/* Estilos personalizados */
+.header-container {
+    background-color: pink; /* Cor de fundo do cabeçalho */
+
+    text-align: center; /* Alinhar conteúdo ao centro */
+    overflow: hidden; /* Ocultar partes da imagem fora do contêiner */
+    height: 70vh;
+    position: relative; /* Permitir posicionamento absoluto do texto */
+}
+.header-container img {
+    width: 100%; /* Largura da imagem */
+    height: auto; /* Altura automática (mantém proporção) */
+    object-fit: cover; /* Corta e redimensiona a imagem */
+    position: absolute; /* Posicionamento absoluto */
+    top: 100%; /* Alinhar verticalmente ao meio do contêiner */
+    left: 50%; /* Alinhar horizontalmente ao meio do contêiner */
+    transform: translate(-50%, -40%); /* Centralizar a imagem */
+    z-index: 1; /* Colocar a imagem atrás do texto */
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+.mapa {
+    margin-left: 40px;
+}
+
+.icon-img {
+    width: 100%;
+}
+
+/* Align left side content to the left */
+.navbar-nav {
+    margin-right: auto;
+}
+
+/* Align right side content to the right */
+.ml-auto {
+    margin-left: auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.btn i {
+    margin-right: 14px; /* Adjust the space between the icon and text */
+    font-size: 34px; /* Adjust the size of the icon */
+}
+.btn h1 {
+    margin: 0; /* Remove any default margin */
+    font-size: 30px; /* Adjust the size of the text */
+}
+
+/* Ocultar a primeira barra de navegação em dispositivos móveis */
+@media (max-width: 767px) {
+    .navbar:first-of-type {
+        display: none;
+    }
+
+    /* Estilos personalizados */
+    .header-container {
+        background-color: pink; /* Cor de fundo do cabeçalho */
+
+        text-align: center; /* Alinhar conteúdo ao centro */
+        overflow: hidden; /* Ocultar partes da imagem fora do contêiner */
+        height: 40vh;
+        position: relative; /* Permitir posicionamento absoluto do texto */
+    }
+    .header-container img {
+        width: 100%; /* Largura da imagem */
+        height: auto; /* Altura automática (mantém proporção) */
+        object-fit: cover; /* Corta e redimensiona a imagem */
+        position: absolute; /* Posicionamento absoluto */
+        top: 50%; /* Alinhar verticalmente ao meio do contêiner */
+        left: 50%; /* Alinhar horizontalmente ao meio do contêiner */
+        transform: translate(-50%, -50%); /* Centralizar a imagem */
+        z-index: 1; /* Colocar a imagem atrás do texto */
+    }
+    /* Centralizar os elementos do rodapé */
+    footer .row {
+        justify-content: center;
+    }
+
+    footer .col-md-3 {
+        text-align: center;
+    }
+
+    footer .col-md-3 ul {
+        padding-left: 0;
+        background-color: #a48871;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer .col-md-3 ul li {
+        list-style: none;
+    }
+
+    footer .col-md-3 ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    footer .col-md-3 ul li a:hover {
+        color: #a48871;
+    }
+
+    .mt-4 h5 {
+        font-size: 13px;
+    }
+
+    .whisper-regular {
+        font-size: 40px;
+    }
+    .btn i {
+        margin-right: 14px; /* Adjust the space between the icon and text */
+        font-size: 24px; /* Adjust the size of the icon */
+    }
+    .btn h1 {
+        margin: 0; /* Remove any default margin */
+        font-size: 20px; /* Adjust the size of the text */
+    }
+
+    .mapa {
+        justify-content: center;
+        margin-left: 0px;
+    }
+}
