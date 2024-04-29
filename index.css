@@ -58,6 +58,10 @@ body {
     margin-left: auto;
 }
 
+.fixos {
+    padding: 5rem;
+}
+
 .btn {
     display: flex;
     align-items: center;
