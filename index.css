@@ -30,7 +30,7 @@ body {
     height: auto; /* Altura automática (mantém proporção) */
     object-fit: cover; /* Corta e redimensiona a imagem */
     position: absolute; /* Posicionamento absoluto */
-    top: 100%; /* Alinhar verticalmente ao meio do contêiner */
+    top: 110%; /* Alinhar verticalmente ao meio do contêiner */
     left: 50%; /* Alinhar horizontalmente ao meio do contêiner */
     transform: translate(-50%, -40%); /* Centralizar a imagem */
     z-index: 1; /* Colocar a imagem atrás do texto */
@@ -112,6 +112,11 @@ body {
 
     .fixos {
         padding: 5rem 2rem 5rem 2rem;
+    }
+    .bg-image {
+        background-position: center;
+        width: 100%; /* Defina a largura da imagem como 100% para ocupar toda a largura da coluna */
+        height: auto; /* Defina a altura como automática para manter a proporção da imagem */
     }
 
     .bg-image {

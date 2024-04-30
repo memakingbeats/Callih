@@ -16,6 +16,17 @@ body {
     line-height: 30px; /* Centralize verticalmente o ícone */
 }
 
+/* Adicione este CSS para alinhar os ícones ao lado dos títulos */
+.card-body {
+    position: relative;
+}
+
+.card-body .fas.fa-flower {
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    left: 10px; /* Ajuste conforme necessário */
+}
+
 .mapa {
     margin-left: 40px;
 }
@@ -50,14 +61,6 @@ body {
 .btn h1 {
     margin: 0; /* Remove any default margin */
     font-size: 30px; /* Adjust the size of the text */
-}
-
-.sessao {
-    height: 50rem;
-    margin-top: 5rem;
-    padding: 2rem;
-    position: relative;
-    margin-bottom: 30rem;
 }
 
 .zoom-icon {
@@ -148,12 +151,11 @@ body {
         justify-content: center;
         margin-left: 0px;
     }
-
     .col-md-3 {
         margin-bottom: 20px; /* Ajuste a margem conforme necessário */
     }
 
     .sessao {
-        margin-bottom: 105rem;
+        margin-bottom: 80rem;
     }
 }
