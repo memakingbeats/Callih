@@ -113,14 +113,25 @@ body {
     .fixos {
         padding: 5rem 2rem 5rem 2rem;
     }
-    .bg-image {
-        background-position: center;
-        width: 100%; /* Defina a largura da imagem como 100% para ocupar toda a largura da coluna */
-        height: auto; /* Defina a altura como automática para manter a proporção da imagem */
-    }
 
     .bg-image {
-        height: 400px;
+        background-position: center;
+        background-size: cover; /* Ajuste o tamanho da imagem para cobrir todo o contêiner */
+        min-height: 700px; /* Defina uma altura mínima para evitar que o conteúdo sobreponha a imagem */
+        position: relative; /* Adicione position: relative para garantir que outros elementos no mesmo nível de profundidade se comportem corretamente */
+    }
+
+    .bg-image::before {
+        content: ""; /* Adicione um pseudo-elemento para a imagem de fundo */
+        background-image: url("./imagens/portal-da-villa.jpeg"); /* Caminho da imagem de fundo */
+        background-attachment: fixed;
+        position: absolute; /* Defina a posição absoluta para que o pseudo-elemento cubra todo o contêiner */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Coloque o pseudo-elemento atrás de outros conteúdos */
+        opacity: 0.6; /* Ajuste a opacidade conforme necessário */
     }
 
     .texto {
