@@ -47,3 +47,18 @@
     font-size: 14px;
     color: black;
 }
+
+.rounded-circle {
+    width: 400px;
+}
+.autora {
+    padding: 20rem;
+}
+
+.texto h2 {
+    font-family: "Alex Brush", cursive;
+    font-size: 50px;
+}
+.texto p {
+    font-family: "Cormorant SC", serif;
+}
