@@ -1,0 +1,49 @@
+.livros {
+    background-color: #364451;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ccc;
+}
+
+.navbar {
+    height: 4rem;
+}
+
+.navbar-text {
+    line-height: 2rem; /* Centraliza verticalmente na navbar */
+}
+.text-center p {
+    color: #fff;
+}
+.font-cormorant {
+    font-family: "Cormorant SC", serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.text-center .font-cormorant2 {
+    font-family: "Cormorant SC", serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    background-color: #f5f4f0;
+}
+
+.custom-header {
+    background-color: #f5f4f0;
+    height: 25rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.custom-header .linques .nav-item a {
+    margin-right: 40px;
+    font-family: "Cormorant SC", serif;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: black;
+}
